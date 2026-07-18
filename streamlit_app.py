@@ -33,7 +33,7 @@ DATA_PATH = os.path.join(
 
 API_URL = os.getenv(
     "API_URL",
-    "http://127.0.0.1:8000",
+    "https://cybersecurity-resolution-api.onrender.com"
 )
 
 
