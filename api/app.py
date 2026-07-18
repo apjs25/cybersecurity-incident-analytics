@@ -53,8 +53,14 @@ if not os.path.isdir(MODEL_PATH):
 
 spark = (
     SparkSession.builder
-    .master("local[*]")
+    .master("local[1]")
     .appName("CybersecurityPredictionAPI")
+    .config("spark.driver.memory", "384m")
+    .config("spark.executor.memory", "384m")
+    .config("spark.driver.maxResultSize", "64m")
+    .config("spark.sql.shuffle.partitions", "1")
+    .config("spark.default.parallelism", "1")
+    .config("spark.ui.enabled", "false")
     .getOrCreate()
 )
 

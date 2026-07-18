@@ -2,7 +2,3 @@ fastapi
 uvicorn[standard]
 pydantic
 pyspark
-streamlit
-pandas
-plotly
-requests
