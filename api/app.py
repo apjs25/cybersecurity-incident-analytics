@@ -57,6 +57,7 @@ spark = (
     .appName("CybersecurityPredictionAPI")
     .config("spark.driver.memory", "384m")
     .config("spark.executor.memory", "384m")
+    .config("spark.testing.memory", "536870912")
     .config("spark.driver.maxResultSize", "64m")
     .config("spark.sql.shuffle.partitions", "1")
     .config("spark.default.parallelism", "1")
