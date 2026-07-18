@@ -3,3 +3,7 @@ uvicorn[standard]
 pydantic
 pyspark
 numpy
+pandas
+streamlit
+requests
+plotly
